@@ -1,0 +1,152 @@
+/* @import url('https://fonts.googleapis.com/css2?family=Inconsolata:wght@200..900&display=swap');
+
+*{
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+  
+}
+
+.Navagation{
+  display: grid;
+  width: 90%;
+  grid-template-columns:4fr repeat(5,1fr);
+  align-items: center;
+  border: 2px solid rgb(255, 0, 0);
+  margin: 20px;
+  box-shadow: 5px 5px 30px rgba(255, 0, 0, 0.342);
+  background-color: red;
+  border-radius: 40px;
+  
+}
+
+.NavMain{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.Navagation a{
+  text-decoration: none;
+  color: black;
+   font-family: "Inconsolata", monospace;
+   font-size: clamp(5px,2vh,20px);
+  width: (50%,100%);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: rgb(255, 255, 255);
+  height: 55px;
+  padding: 30px;
+
+}
+
+.Navagation a:hover{
+  color: red;
+  background-color: white;
+  border-radius: 40px;
+}
+
+.Navagation a:focus{
+  color: red;
+  background-color: white;
+  border-radius: 40px;
+}
+  */
+
+
+  *{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Inconsolata", monospace;
+}
+
+/* MAIN WRAPPER */
+.NavMain{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+/* NAV BAR */
+.Navagation{
+  width: 90%;
+  display: flex;               
+  justify-content: space-between;
+  align-items: center;
+  margin: 20px;
+  padding: 10px 20px;
+  background-color: red;
+  border-radius: 40px;
+  box-shadow: 5px 5px 30px rgba(255, 0, 0, 0.342);
+}
+
+/* PROFILE (LEFT SIDE) */
+.Navagation > div:first-child{
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+/* LINKS CONTAINER */
+.menu{
+  display: flex;
+  gap: 20px;
+  border: 2px solid white;
+  border-radius: 40px;
+}
+
+/* LINKS */
+.Navagation a{
+  text-decoration: none;
+  color: white;
+  font-size: 18px;
+  padding: 8px 15px;
+  border-radius: 20px;
+  transition: 0.3s;
+}
+
+
+.Navagation a:focus{
+  color: red;
+  background-color: white;
+  border-radius: 15px;
+}
+
+
+
+@media (max-width: 768px){
+
+  .Navagation{
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 15px;
+    border-radius: 20px;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+  }
+
+  .menu{
+  
+    width: 100%;
+    gap: 10px;
+    margin-top: 10px;
+  }
+
+  .Navagation a{
+    width: 100%;
+    padding: 5px;
+  }
+
+  .pro{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+}
+ 

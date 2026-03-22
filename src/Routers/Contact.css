@@ -1,0 +1,174 @@
+/* *{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+ 
+.Conmain{
+    display: flex;
+}
+
+.Conmain .Context,.Conform{
+    height: 80vh;
+    margin: 20px;
+    background-color: red;
+    padding: 20px;
+    width: 100%;
+    max-width: 700px;
+}
+
+.Context{
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    justify-content: center;
+}
+
+.Context h2{
+    font-size: 80px;
+    text-transform: uppercase;
+    min-width: 300px;   
+}
+
+.Context p{
+    font-size: 25px;
+    width: 100%;
+    max-width: 700px;
+     text-align: justify    ;
+}
+
+.Conform{
+    display: grid;
+    justify-content: center;
+    align-items: center;
+}
+
+.Conform label{
+    font-size: 10px;
+}
+
+.Conform input{
+
+} */
+
+
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Inconsolata", monospace;
+}
+
+/* MAIN CONTAINER */
+.Conmain{
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  gap: 40px;
+  padding: 120px;
+  flex-wrap: wrap;   /* 🔥 important */
+}
+
+
+.Conmain .Conform,.Context{
+    height: 60vh;
+    padding: 60px;
+
+
+}
+/* LEFT SIDE TEXT */
+.Context{
+  padding: 20px;
+  flex: 1;
+  min-width: 300px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 20px;
+ 
+}
+
+.Context h2{
+  font-size: clamp(45px, 4vw, 60px);
+  margin-bottom: 20px;
+  text-transform: uppercase;
+  color: red;
+}
+
+.Context p{
+  font-size: 25px;
+  line-height: 1.6;
+  margin-bottom: 20px;
+}
+
+.Context h3{
+  font-size: 25px;
+  margin-bottom: 10px;
+}
+
+/* RIGHT SIDE FORM */
+.Conform{
+  flex: 1;
+  min-width: 300px;
+  background: #f9f9f9;
+  padding: 25px;
+  border-radius: 10px;
+  box-shadow: 0px 5px 20px rgba(0,0,0,0.1);
+}
+
+/* FORM */
+form{
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+/* LABEL */
+label{
+  font-size: 14px;
+  font-weight: 500;
+}
+
+/* INPUT + TEXTAREA */
+input,
+textarea{
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  outline: none;
+  font-size: 14px;
+}
+
+/* FOCUS EFFECT */
+input:focus,
+textarea:focus{
+  border-color: red;
+}
+
+/* BUTTON (optional add later) */
+button{
+  background: red;
+  color: white;
+  padding: 10px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+/* 📱 MOBILE */
+@media (max-width: 768px){
+
+  .Conmain{
+    flex-direction: column;
+    padding: 20px;
+  }
+
+  .Context{
+    text-align: center;
+  }
+
+  .Conform{
+    width: 100%;
+  }
+}

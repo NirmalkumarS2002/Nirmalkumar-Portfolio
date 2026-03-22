@@ -1,0 +1,193 @@
+/* 
+@import url('https://fonts.googleapis.com/css2?family=Inconsolata:wght@200..900&display=swap');
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+.spm{
+    color: red;
+    text-transform: uppercase;
+}
+
+.text{
+    height: 80vh;
+    width: 40%;
+    font-family: "Inconsolata", monospace; 
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 40px;
+}
+
+.text h2{
+    font-size: 45px;
+}
+
+.text h1{
+    font-size: 80px;
+    flex-wrap: nowrap;
+}
+
+.text h3{
+    font-size: 30px;
+    background-color: red;
+    width: 240px;
+    color: white;
+    height: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 4px;
+}
+
+.text p{
+    width: 480px;
+    text-align: justify;
+}
+
+
+
+.picture{
+    height: 80vh;
+    width: 40%;
+    display: flex;
+    justify-content: center;
+}
+
+.picture img{
+    width: 100%;
+}
+.home{
+    display: flex;
+    margin: 20px;
+    justify-content: center;   
+}
+
+.home div{
+    margin: 20px;
+} */
+
+
+/*  */
+
+
+/* MAIN LAYOUT */
+.home{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 40px;
+    padding: 60px 20px;
+    flex-wrap: wrap;
+}
+
+/* TEXT */
+.text{
+    flex: 1;
+    min-width: 300px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    font-family: "Inconsolata", monospace;
+}
+
+/* HEADINGS */
+.text h2{
+    font-size: clamp(20px, 3vw, 40px);
+}
+
+.text .tit{
+    font-size: clamp(40px, 5vw, 70px);
+
+    
+}
+
+/* PARAGRAPH */
+.text p{
+    max-width: 500px;
+    line-height: 1.6;
+}
+
+/* BUTTON */
+.text h3{
+    background-color: red;
+    color: white;
+    padding: 12px 25px;
+    width: fit-content;
+    border-radius: 6px;
+    cursor: pointer;
+}
+
+/* IMAGE */
+.picture{
+    flex: 1;
+    min-width: 300px;
+    display: flex;
+    justify-content: center;
+}
+
+.picture img{
+    width: 100%;
+    max-width: 800px;
+}
+
+.spm{
+    color: red;
+    border-right: 3px solid red;
+    white-space: nowrap;
+    overflow: hidden;
+    width: 0;
+    animation: typing 3s steps(10) infinite alternate,
+               blink 0.7s infinite;
+}
+
+@keyframes typing {
+    from { width: 0 }
+    to { width: 9ch }
+}
+
+@keyframes blink {
+    50% { border-color: transparent }
+}
+
+
+
+@keyframes typing {
+    from {
+        width: 0;
+    }
+    to {
+        width: 9ch;  
+    }
+}
+
+
+@keyframes blink {
+    50% {
+        border-color: transparent;
+    }
+}
+
+
+/* 📱 MOBILE */
+@media (max-width: 768px){
+    .home{
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .text{
+        align-items: center;
+    }
+
+    .text p{
+        text-align: center;
+    }
+
+    .text h1{
+    margin-right: 0px;
+    
+}
+    
+}
